@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.script.ScreenShortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-18T12:39:08" hostname="FH400" time="12.647">
+<testsuite name="com.bridgelabz.script.ScreenShortTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-19T11:15:39" hostname="FH400" time="20.261">
   <properties/>
-  <testcase name="navigationOfBrowser" classname="com.bridgelabz.script.ScreenShortTest" time="12.647"/>
+  <testcase name="downloadFile" classname="com.bridgelabz.script.ScreenShortTest" time="20.261"/>
   <system-out><![CDATA[Inside listener
-Driver:FirefoxDriver: firefox on LINUX (9a011e7b-e423-4a72-96c7-5928dc8a3f99)
+Driver:FirefoxDriver: firefox on LINUX (dd4c3eb0-4a74-4ee0-9f86-d3befa015d0d)
 ]]></system-out>
-  <system-err><![CDATA[1579351142497	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile70JECw"
-1579351143262	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1579351143525	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1579351143532	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1579351143532	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1579351143532	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1579351147532	Marionette	INFO	Listening on port 41531
-1579351147635	Marionette	WARN	TLS certificate errors will be ignored for this session
-Jan 18, 2020 6:09:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[1579432532646	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqIhat7"
+1579432533498	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579432534106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579432534106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579432534107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579432534107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579432539151	Marionette	INFO	Listening on port 41329
+1579432539188	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jan 19, 2020 4:45:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1579351161255	Marionette	INFO	Stopped listening on port 41531
+JavaScript error: http://demo.automationtesting.in/angcontroller.js, line 856: TypeError: scope.menucontainer is undefined
+1579432560037	Marionette	INFO	Stopped listening on port 41329
 ]]></system-err>
 </testsuite>

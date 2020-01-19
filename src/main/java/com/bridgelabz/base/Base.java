@@ -5,22 +5,30 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.io.IOException;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 public class Base  {
 
-  public static WebDriver driver;
+    public static WebDriver driver;
+    private static File folder;
 
-    public void initialization()
+
+
+    public static void initialization()
     {
     System.setProperty("webdriver.gecko.driver", "/home/user/IdeaProjects/ListnerScreenShort/Driver/geckodriver");
     driver=new FirefoxDriver();
-    driver.get("https://www.google.com");
+   //driver.get("www.gmail.com");
     }
 
 
@@ -31,8 +39,8 @@ public class Base  {
 
         File src = ts.getScreenshotAs(OutputType.FILE);
         Date date=new Date();
-        File dest = new File("/home/user/IdeaProjects/ListnerScreenShort/Screenshort" + date.toString() + ".png");
-        //File dest1=new File("/home/user/IdeaProjects/ListnerScreenShort/Screenshort"+".png");
+        File dest = new File("/home/user/IdeaProjects/ListnerScreenShort/Screenshort/   " + date.toString() + ".png");
+
         try
         {
             FileUtils.copyFile(src, dest);
